@@ -1,1071 +1,630 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Portfolio of Karthik Gadudula, Java Backend Engineer experienced in Java, Spring Boot, Microservices, REST APIs, SQL, and enterprise application development."
-    >
-
-    <title>Karthik Gadudula | Java Backend Engineer</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karthik Gadudula — Full Stack Software Engineer specializing in Java, Spring Boot, React, distributed systems, and AI-enabled applications.">
+  <meta name="theme-color" content="#08111f">
+  <title>Karthik Gadudula | Full Stack Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-
-<!-- =========================================
-     NAVBAR
-========================================= -->
-
 <header class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">KG<span>.</span></a>
 
-    <div class="nav-container">
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="navMenu">☰</button>
 
-        <a href="#home" class="logo">
-            KG<span>.</span>
-        </a>
-
-        <button
-            class="menu-toggle"
-            id="menuToggle"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-        >
-            ☰
-        </button>
-
-        <nav id="navMenu">
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-    </div>
-
+    <nav id="navMenu" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
-
 
 <main>
 
-
-<!-- =========================================
-     HERO
-========================================= -->
-
+<!-- HOME -->
 <section class="hero" id="home">
+  <div class="hero-layout">
+    <div class="hero-content">
+      <p class="section-label">HELLO, I'M</p>
+      <h1>Karthik<br><span>Gadudula.</span></h1>
 
-    <div class="hero-layout">
+      <h2>Full Stack Software Engineer</h2>
+      <p class="hero-description">
+        Building scalable backend services, distributed systems,
+        modern web applications, and AI-enabled enterprise solutions.
+        Experienced with Java, Spring Boot, React, TypeScript,
+        Kafka, Kubernetes, and Agentic AI.
+      </p>
 
-        <div class="hero-content">
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">Explore My Work ↗</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+        <a href="Resume/Karthik_Goud_Full_Stack_Developer.pdf"
+           download="Karthik_Goud_Full_Stack_Developer.pdf"
+           class="btn secondary">Download Resume ↓</a>
+      </div>
 
-            <p class="hello">
-                HELLO, I'M
-            </p>
+      <div class="hero-links">
+        <a href="https://github.com/Karthik0102"
+           target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/karthik-java-developer/"
+           target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="mailto:Karthik.codess@gmail.com">Email ↗</a>
+      </div>
 
-            <h1>
-                Karthik<br>
-                Gadudula
-            </h1>
-
-            <h2>
-                Java Backend Engineer
-            </h2>
-
-            <p class="hero-description">
-                I build reliable, scalable, and secure backend applications
-                using Java, Spring Boot, Microservices, REST APIs, and SQL.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary">
-                    View My Work
-                </a>
-
-                <a href="#contact" class="btn secondary">
-                    Contact Me
-                </a>
-
-               
-
-               <a
-    href="Resume/Karthik-Gadudula-Resume.pdf"
-    download="Karthik-Gadudula-Resume.pdf"
-    class="btn secondary"
->
-    Download Resume ↓
-</a>
-            
-
-            </div>
-
-            <div class="hero-links">
-
-                <a
-                    href="https://www.linkedin.com/in/karthik-java-developer/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn ↗
-                </a>
-
-                <a
-                    href="https://github.com/Karthik0102"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub ↗
-                </a>
-
-            </div>
-
-            <div class="hero-tech">
-
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>Microservices</span>
-                <span>REST APIs</span>
-                <span>SQL</span>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-photo-wrapper">
-
-            <img
-                src="Images/karthik-portfolio-headshot.jpg"
-                alt="Karthik Gadudula"
-                class="hero-photo"
-            >
-
-        </div>
-
+      <div class="tag-row">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Kafka</span>
+        <span>Agentic AI</span>
+      </div>
     </div>
 
+    <div class="hero-photo-wrapper">
+      <img src="Images/karthik-portfolio-headshot.jpg"
+           alt="Karthik Gadudula — Software Engineer"
+           class="hero-photo"
+           fetchpriority="high">
+    </div>
+  </div>
 </section>
 
-
-
-<!-- =========================================
-     ABOUT
-========================================= -->
-
+<!-- ABOUT -->
 <section class="section" id="about">
+  <div class="section-container">
+    <p class="section-label">ABOUT ME</p>
+    <h2 class="section-title">
+      Engineering scalable systems from backend architecture
+      to intelligent user experiences.
+    </h2>
 
-    <div class="section-container">
-
-        <p class="section-label">
-            ABOUT ME
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a Full Stack Software Engineer with 4 years of
+          experience building REST APIs, microservices,
+          distributed systems, and cloud-native applications.
         </p>
+        <p>
+          My experience spans Java, Spring Boot, Spring WebFlux,
+          React, TypeScript, PostgreSQL, Kafka, and Kubernetes.
+          I focus on designing secure, reliable systems and
+          integrating backend services with modern interfaces.
+        </p>
+        <p>
+          I have also worked with AI-enabled engineering
+          approaches involving Agentic AI, retrieval-augmented
+          generation (RAG), Model Context Protocol (MCP),
+          and tool calling.
+        </p>
+        <p>
+          I earned my Master of Science in Information Systems
+          from Central Michigan University in May 2026.
+        </p>
+      </div>
 
-        <h2 class="section-title">
-            Building backend systems that solve real problems.
-        </h2>
-
-        <div class="about-grid">
-
-            <div class="about-text">
-
-                <p>
-                    I'm a Java Backend Engineer with 3+ years of professional
-                    software engineering experience developing and supporting
-                    enterprise applications using Java, Spring Boot,
-                    Microservices, REST APIs, and relational and NoSQL databases.
-                </p>
-
-                <p>
-                    During my time at Tata Consultancy Services, I contributed to
-                    client engagements for USAA, Cisco, and CVS Health across
-                    application modernization, backend development, API
-                    development, security remediation, testing, and production
-                    support.
-                </p>
-
-                <p>
-                    I also earned my Master of Science in Information Systems
-                    from Central Michigan University, where I continued building
-                    practical software systems and strengthening my backend
-                    engineering skills.
-                </p>
-
-            </div>
-
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <strong>3+</strong>
-                    <span>Years Professional Experience</span>
-                </div>
-
-                <div class="stat-card">
-                    <strong>3</strong>
-                    <span>Enterprise Client Engagements</span>
-                </div>
-
-                <div class="stat-card">
-                    <strong>3,000+</strong>
-                    <span>Security Vulnerabilities Addressed by Team</span>
-                </div>
-
-                <div class="stat-card">
-                    <strong>3.9</strong>
-                    <span>Master's GPA / 4.0</span>
-                </div>
-
-            </div>
-
+      <div class="stats-grid">
+        <div class="stat-card">
+          <strong>4</strong>
+          <span>Years of Experience</span>
         </div>
-
+        <div class="stat-card">
+          <strong>3</strong>
+          <span>Enterprise Client Engagements at TCS</span>
+        </div>
+        <div class="stat-card">
+          <strong>3,000+</strong>
+          <span>Security Vulnerabilities Addressed by Team</span>
+        </div>
+        <div class="stat-card">
+          <strong>2026</strong>
+          <span>MS Information Systems Graduate</span>
+        </div>
+      </div>
     </div>
-
+  </div>
 </section>
 
-
-
-<!-- =========================================
-     EXPERIENCE
-========================================= -->
-
+<!-- EXPERIENCE -->
 <section class="section alternate" id="experience">
-
-    <div class="section-container">
-
-        <p class="section-label">
-            EXPERIENCE
-        </p>
-
-        <h2 class="section-title">
-            Enterprise software engineering across healthcare,
-            financial services, and technology.
-        </h2>
-
-
-        <!-- TCS -->
-
-        <article class="experience-card featured">
-
-            <div class="experience-heading">
-
-                <div>
-                    <h3>Software Engineer</h3>
-                    <p class="company">
-                        Tata Consultancy Services
-                    </p>
-                </div>
-
-                <span class="experience-date">
-                    Jul 2021 – Aug 2026
-                </span>
-
-            </div>
-
-            <p class="experience-note">
-                Active client engineering work from July 2021 through July 2024,
-                followed by approved educational leave from August 2024 until
-                resignation in August 2026 while completing graduate studies.
-            </p>
-
-
-            <div class="client-grid">
-
-
-                <!-- USAA -->
-
-                <div class="client-card">
-
-                    <p class="client-name">
-                        USAA
-                    </p>
-
-                    <p class="client-date">
-                        Sep 2023 – Jul 2024
-                    </p>
-
-                    <h4>
-                        Application Modernization
-                    </h4>
-
-                    <p>
-                        Contributed as one of five backend engineers on a
-                        15-member modernization team migrating legacy
-                        application functionality into independent Spring Boot
-                        microservices.
-                    </p>
-
-                    <ul>
-                        <li>
-                            Developed REST APIs using Controller-Service-Repository
-                            architecture.
-                        </li>
-
-                        <li>
-                            Redirected application calls to new services and
-                            compared responses against legacy functionality.
-                        </li>
-
-                        <li>
-                            Used RestTemplate for service-to-service communication.
-                        </li>
-
-                        <li>
-                            Externalized hard-coded configuration and sensitive
-                            application properties.
-                        </li>
-
-                        <li>
-                            Supported CI/CD troubleshooting, testing, and
-                            production issues.
-                        </li>
-
-                        <li>
-                            Participated in technical interviews for Java
-                            developer candidates.
-                        </li>
-                    </ul>
-
-                </div>
-
-
-                <!-- CISCO -->
-
-                <div class="client-card">
-
-                    <p class="client-name">
-                        Cisco
-                    </p>
-
-                    <p class="client-date">
-                        Jan 2023 – Aug 2023
-                    </p>
-
-                    <h4>
-                        Stream Lead & Security Remediation
-                    </h4>
-
-                    <p>
-                        Worked as a stream lead supporting junior engineers and
-                        coordinating remediation work across enterprise
-                        applications.
-                    </p>
-
-                    <ul>
-                        <li>
-                            Supported team remediation of 3,000+ Java and
-                            JavaScript security vulnerabilities.
-                        </li>
-
-                        <li>
-                            Addressed issues including SQL injection and
-                            reflected cross-site scripting.
-                        </li>
-
-                        <li>
-                            Reviewed fixes submitted by junior developers and
-                            helped unblock technical issues.
-                        </li>
-
-                        <li>
-                            Used Checkmarx scanning to verify security findings
-                            and remediation.
-                        </li>
-
-                        <li>
-                            Contributed to team efforts that improved application
-                            health/performance scores from approximately 40% to
-                            above 85%.
-                        </li>
-                    </ul>
-
-                </div>
-
-
-                <!-- CVS -->
-
-                <div class="client-card">
-
-                    <p class="client-name">
-                        CVS Health
-                    </p>
-
-                    <p class="client-date">
-                        Aug 2021 – Dec 2022
-                    </p>
-
-                    <h4>
-                        Backend Application Development
-                    </h4>
-
-                    <p>
-                        Developed backend functionality for enterprise
-                        applications using Java and Spring Boot.
-                    </p>
-
-                    <ul>
-                        <li>
-                            Built REST APIs supporting CRUD operations and
-                            business workflows.
-                        </li>
-
-                        <li>
-                            Developed dynamic Excel report generation
-                            functionality.
-                        </li>
-
-                        <li>
-                            Used reusable Excel templates hosted in AWS S3.
-                        </li>
-
-                        <li>
-                            Worked with MySQL, PostgreSQL, MongoDB, Spring Data
-                            JPA, and Hibernate.
-                        </li>
-
-                        <li>
-                            Supported authentication using Spring Security and
-                            OAuth.
-                        </li>
-
-                        <li>
-                            Performed API and unit testing using Postman and
-                            JUnit.
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <div class="secondary-experience-grid">
-
-
-            <!-- CMU -->
-
-            <article class="experience-card">
-
-                <div class="experience-heading">
-
-                    <div>
-                        <h3>
-                            Student Assistant — IT Development
-                        </h3>
-
-                        <p class="company">
-                            Central Michigan University
-                        </p>
-                    </div>
-
-                    <span class="experience-date">
-                        Jan 2025 – May 2026
-                    </span>
-
-                </div>
-
-                <p>
-                    Supported university web applications by working on
-                    development tickets, application maintenance, bug fixes,
-                    feature validation, and API testing.
-                </p>
-
-                <div class="tag-row">
-                    <span>Java</span>
-                    <span>Web Applications</span>
-                    <span>Postman</span>
-                    <span>Testing</span>
-                </div>
-
-            </article>
-
-
-
-            <!-- GREPTHOR -->
-
-            <article class="experience-card">
-
-                <div class="experience-heading">
-
-                    <div>
-                        <h3>
-                            Java Developer Intern
-                        </h3>
-
-                        <p class="company">
-                            Grepthor Software Solutions
-                        </p>
-                    </div>
-
-                    <span class="experience-date">
-                        May 2020 – Jun 2021
-                    </span>
-
-                </div>
-
-                <p>
-                    Worked within a five-person internship team developing Java
-                    and Spring Boot REST APIs for a CIBIL-based loan eligibility
-                    application.
-                </p>
-
-                <div class="tag-row">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>REST APIs</span>
-                    <span>MySQL</span>
-                </div>
-
-            </article>
-
-
+  <div class="section-container">
+    <p class="section-label">PROFESSIONAL EXPERIENCE</p>
+    <h2 class="section-title">
+      Enterprise engineering, modernization, security,
+      and AI-enabled development.
+    </h2>
+
+    <article class="experience-card featured">
+      <div class="experience-heading">
+        <div>
+          <h3>Full Stack Software Engineer (Agentic AI)</h3>
+          <p class="company">Atlassian</p>
+        </div>
+        <span class="experience-date">Oct 2025 – Present</span>
+      </div>
+
+      <p class="experience-note">
+        AI-Powered Teamwork Automation Platform | Hybrid, USA
+      </p>
+
+      <ul class="experience-list">
+        <li>
+          Built Java, Spring Boot, Spring WebFlux, Hibernate,
+          and PostgreSQL services connecting Jira and
+          Confluence workflows through scalable REST APIs,
+          improving platform response latency by 8%.
+        </li>
+        <li>
+          Modernized asynchronous collaboration services
+          using Kafka, Redis, Spring WebFlux, and Project Reactor
+          to coordinate Jira issues, Confluence knowledge,
+          and workflow events.
+        </li>
+        <li>
+          Collaborated with AI engineers to integrate
+          LangGraph, MCP, RAG, tool calling, and Java services
+          with Teamwork Graph context for grounded automation.
+        </li>
+        <li>
+          Integrated React, TypeScript, Next.js, and WebSockets
+          with backend services to deliver responsive
+          collaboration experiences and real-time updates.
+        </li>
+        <li>
+          Implemented security controls using Spring Security,
+          OAuth2, JWT, RBAC, encryption, secrets management,
+          authorization, and audit logging.
+        </li>
+        <li>
+          Improved engineering delivery using Maven, JUnit 5,
+          Mockito, Checkstyle, SpotBugs, Docker, Kubernetes,
+          Terraform, GitHub Actions, and OpenTelemetry,
+          reducing production defects by 12%.
+        </li>
+      </ul>
+
+      <div class="tag-row">
+        <span>Spring WebFlux</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Kafka</span>
+        <span>Kubernetes</span>
+        <span>LangGraph</span>
+        <span>MCP</span>
+        <span>RAG</span>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <div class="experience-heading">
+        <div>
+          <h3>Software Engineer</h3>
+          <p class="company">Tata Consultancy Services</p>
+        </div>
+        <span class="experience-date">Aug 2021 – Jul 2024</span>
+      </div>
+
+      <p class="experience-note">
+        Enterprise software engineering across financial
+        services, cybersecurity, and healthcare.
+      </p>
+
+      <div class="client-grid">
+
+        <div class="client-card">
+          <p class="client-name">USAA</p>
+          <h4>Monolith-to-Microservices Migration</h4>
+          <ul>
+            <li>
+              Decomposed legacy Java modules into independently
+              deployable Spring Boot microservices as part of
+              a five-member backend team.
+            </li>
+            <li>
+              Developed REST APIs and validated migrated behavior
+              against legacy implementations using identical
+              test data and Postman.
+            </li>
+            <li>
+              Externalized application configuration and
+              implemented RestTemplate inter-service communication.
+            </li>
+            <li>
+              Troubleshot CI/CD pipelines, dependency issues,
+              and production incidents.
+            </li>
+            <li>
+              Participated in sprint planning, code reviews,
+              and technical interviews.
+            </li>
+          </ul>
         </div>
 
-    </div>
+        <div class="client-card">
+          <p class="client-name">Cisco Systems</p>
+          <h4>Stream Lead & Security Remediation</h4>
+          <ul>
+            <li>
+              Coordinated remediation of 3,000+ Java and
+              JavaScript security vulnerabilities identified
+              through Checkmarx.
+            </li>
+            <li>
+              Addressed SQL injection and reflected XSS using
+              prepared statements, parameterized queries,
+              and allowlist validation.
+            </li>
+            <li>
+              Reviewed pull requests, validated security scans,
+              and helped junior engineers resolve findings.
+            </li>
+            <li>
+              Contributed to improving application health and
+              performance scores from approximately 40% to
+              above 85%.
+            </li>
+          </ul>
+        </div>
 
+        <div class="client-card">
+          <p class="client-name">CVS Health</p>
+          <h4>Backend Application Development</h4>
+          <ul>
+            <li>
+              Developed Spring Boot REST APIs using
+              Controller-Service-Repository architecture.
+            </li>
+            <li>
+              Built dynamic Excel reporting workflows using
+              Spring Boot, AWS S3, and reusable templates.
+            </li>
+            <li>
+              Worked with Spring Data JPA, MySQL,
+              PostgreSQL, and MongoDB.
+            </li>
+            <li>
+              Secured endpoints through Spring Security
+              and OAuth authentication controls.
+            </li>
+            <li>
+              Validated backend services using JUnit
+              and Postman.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </article>
+  </div>
 </section>
 
-
-
-<!-- =========================================
-     SKILLS
-========================================= -->
-
+<!-- SKILLS -->
 <section class="section" id="skills">
+  <div class="section-container">
+    <p class="section-label">TECHNICAL EXPERTISE</p>
+    <h2 class="section-title">
+      Technologies across full-stack development,
+      distributed systems, cloud, and AI.
+    </h2>
 
-    <div class="section-container">
+    <div class="skills-grid">
 
-        <p class="section-label">
-            TECHNICAL SKILLS
-        </p>
-
-        <h2 class="section-title">
-            Technologies I use to build and support backend applications.
-        </h2>
-
-
-        <div class="skills-grid">
-
-
-            <div class="skill-card">
-
-                <h3>
-                    Backend Engineering
-                </h3>
-
-                <div class="skill-list">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Spring MVC</span>
-                    <span>Spring Data JPA</span>
-                    <span>Spring Security</span>
-                    <span>OAuth</span>
-                    <span>REST APIs</span>
-                    <span>Microservices</span>
-                    <span>Apache Struts</span>
-                    <span>OOP</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    Databases
-                </h3>
-
-                <div class="skill-list">
-                    <span>MySQL</span>
-                    <span>PostgreSQL</span>
-                    <span>MongoDB</span>
-                    <span>SQL</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    Cloud & DevOps
-                </h3>
-
-                <div class="skill-list">
-                    <span>AWS S3</span>
-                    <span>Jenkins</span>
-                    <span>Maven</span>
-                    <span>CI/CD</span>
-                    <span>Git</span>
-                    <span>Bitbucket</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    Testing & Security
-                </h3>
-
-                <div class="skill-list">
-                    <span>JUnit</span>
-                    <span>Postman</span>
-                    <span>Checkmarx</span>
-                    <span>SQL Injection Prevention</span>
-                    <span>XSS Prevention</span>
-                    <span>Secure Coding</span>
-                    <span>Token Authentication</span>
-                </div>
-
-            </div>
-
-
+      <div class="skill-card">
+        <h3>Languages & Full Stack</h3>
+        <div class="skill-list">
+          <span>Java</span><span>Python</span>
+          <span>C</span><span>C++</span>
+          <span>SQL</span><span>TypeScript</span>
+          <span>React</span><span>Next.js</span>
+          <span>React Native</span><span>FastAPI</span>
+          <span>WebSockets</span>
         </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Backend Engineering</h3>
+        <div class="skill-list">
+          <span>Spring Boot</span>
+          <span>Spring WebFlux</span>
+          <span>Spring Data JPA</span>
+          <span>Hibernate</span>
+          <span>REST APIs</span>
+          <span>Microservices</span>
+          <span>Project Reactor</span>
+          <span>Distributed Systems</span>
+          <span>Event-Driven Architecture</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>AI & Distributed Workflows</h3>
+        <div class="skill-list">
+          <span>Agentic AI</span>
+          <span>LangGraph</span>
+          <span>OpenAI Agents SDK</span>
+          <span>MCP</span><span>RAG</span>
+          <span>Tool Calling</span>
+          <span>NL-to-SQL</span>
+          <span>Apache Kafka</span>
+          <span>Apache RocketMQ</span>
+          <span>Temporal</span>
+          <span>Redis Streams</span>
+          <span>Celery</span>
+          <span>Spark Streaming</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Databases & Cloud</h3>
+        <div class="skill-list">
+          <span>PostgreSQL</span>
+          <span>MySQL</span><span>MongoDB</span>
+          <span>Redis</span>
+          <span>Elasticsearch</span>
+          <span>pgvector</span>
+          <span>AWS</span><span>Amazon S3</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>Terraform</span>
+          <span>Jenkins</span>
+          <span>GitHub Actions</span>
+          <span>CI/CD</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Security & Testing</h3>
+        <div class="skill-list">
+          <span>Spring Security</span>
+          <span>OAuth2</span><span>JWT</span>
+          <span>RBAC</span>
+          <span>Encryption</span>
+          <span>Secrets Management</span>
+          <span>Checkmarx</span>
+          <span>JUnit</span><span>Mockito</span>
+          <span>Pytest</span><span>Postman</span>
+          <span>Checkstyle</span>
+          <span>SpotBugs</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Observability & Engineering</h3>
+        <div class="skill-list">
+          <span>OpenTelemetry</span>
+          <span>Prometheus</span>
+          <span>Grafana</span>
+          <span>Structured Logging</span>
+          <span>Health Checks</span>
+          <span>Audit Logging</span>
+          <span>Code Reviews</span>
+          <span>Agile / Scrum</span>
+          <span>Technical Documentation</span>
+        </div>
+      </div>
 
     </div>
-
+  </div>
 </section>
 
-
-
-<!-- =========================================
-     PROJECTS
-========================================= -->
-
+<!-- PROJECTS -->
 <section class="section alternate" id="projects">
+  <div class="section-container">
+    <p class="section-label">FEATURED PROJECT</p>
+    <h2 class="section-title">
+      Building practical software for real-world workflows.
+    </h2>
 
-    <div class="section-container">
+    <article class="project-card">
+      <p class="project-type">CMU CAPSTONE PROJECT</p>
+      <h3>GaragePulse</h3>
+      <p class="project-subtitle">
+        Auto Service Management System
+      </p>
 
-        <p class="section-label">
-            PROJECTS
-        </p>
+      <p class="project-description">
+        A Java-based garage management system developed
+        as part of a five-person capstone team for a local
+        mechanic. The system was designed to replace
+        manual paper-based customer and service workflows.
+      </p>
 
-        <h2 class="section-title">
-            Turning real-world workflows into practical software solutions.
-        </h2>
+      <div class="project-features">
+        <div>
+          <strong>Customer Management</strong>
+          <p>
+            Customer CRUD operations, phone-number search,
+            vehicle details, service history, and new
+            service requests.
+          </p>
+        </div>
 
+        <div>
+          <strong>Authentication & Security</strong>
+          <p>
+            JAuth/token-based authentication, hashed
+            passwords stored in MySQL, and authenticated
+            staff sessions.
+          </p>
+        </div>
 
-        <article class="project-card">
+        <div>
+          <strong>Role-Based Access</strong>
+          <p>
+            Staff roles including Owner/Admin, Mechanic,
+            and Front Desk.
+          </p>
+        </div>
+      </div>
 
-            <div class="project-top">
-
-                <div>
-
-                    <p class="project-type">
-                        CMU CAPSTONE • JAVA BACKEND
-                    </p>
-
-                    <h3>
-                        GaragePulse
-                    </h3>
-
-                    <p class="project-subtitle">
-                        Auto Service Management System
-                    </p>
-
-                </div>
-
-                <span class="project-status">
-                    GitHub Coming Soon
-                </span>
-
-            </div>
-
-
-            <p class="project-description">
-                GaragePulse was developed by a five-person capstone team for a
-                local mechanic who relied on manual paper-based workflows for
-                managing customers and vehicle service information.
-            </p>
-
-            <p class="project-description">
-                My primary responsibility was developing the Customer Management
-                and Authentication/Login modules using Java, Spring Boot, and
-                MySQL.
-            </p>
-
-
-            <div class="project-features">
-
-                <div>
-                    <strong>Customer Management</strong>
-                    <span>
-                        Customer CRUD, phone-number search, vehicle information,
-                        service history, and new service requests.
-                    </span>
-                </div>
-
-                <div>
-                    <strong>Authentication</strong>
-                    <span>
-                        Token-based authentication, hashed passwords, and
-                        role-based access.
-                    </span>
-                </div>
-
-                <div>
-                    <strong>User Roles</strong>
-                    <span>
-                        Owner/Admin, Mechanic, and Front Desk.
-                    </span>
-                </div>
-
-            </div>
-
-
-            <div class="tag-row project-tags">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>MySQL</span>
-                <span>REST APIs</span>
-                <span>Authentication</span>
-            </div>
-
-        </article>
-
-    </div>
-
+      <div class="tag-row">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>MySQL</span>
+        <span>REST APIs</span>
+        <span>Authentication</span>
+      </div>
+    </article>
+  </div>
 </section>
 
-
-
-<!-- =========================================
-     EDUCATION
-========================================= -->
-
+<!-- EDUCATION -->
 <section class="section" id="education">
+  <div class="section-container">
+    <p class="section-label">EDUCATION & CREDENTIALS</p>
+    <h2 class="section-title">
+      Academic background and practical learning.
+    </h2>
 
-    <div class="section-container">
-
-        <p class="section-label">
-            EDUCATION & CREDENTIALS
+    <div class="education-grid">
+      <article class="education-card">
+        <p class="project-type">MASTER'S DEGREE</p>
+        <h3>Central Michigan University</h3>
+        <p class="education-degree">
+          Master of Science in Information Systems
         </p>
+        <p class="muted">
+          Mount Pleasant, Michigan, USA
+        </p>
+        <p class="muted">Jul 2024 – May 2026</p>
+      </article>
 
+      <article class="education-card">
+        <p class="project-type">BACHELOR'S DEGREE</p>
+        <h3>Sri Indu College of Engineering & Technology</h3>
+        <p class="education-degree">
+          Bachelor of Technology
+        </p>
+        <p class="muted">
+          Electronics and Communication Engineering
+        </p>
+        <p class="muted">Jul 2017 – Jul 2021</p>
+      </article>
+    </div>
+
+    <div class="certifications-header">
+      <p class="section-label">PRACTICAL LEARNING</p>
+      <h3>Software Engineering Job Simulations</h3>
+      <p class="muted">
+        Independent practical simulations completed through
+        Forage. These are educational experiences, not employment.
+      </p>
+    </div>
+
+    <div class="certifications-grid">
+      <article class="certification-card">
+        <img
+          src="Images/JPmorgan.jpeg"
+          alt="JPMorgan Chase Forage completion certificate"
+          class="certificate-image"
+          loading="lazy">
+
+        <div class="certificate-body">
+          <p class="project-type">JPMORGAN CHASE & CO.</p>
+          <h3>Software Engineering Job Simulation</h3>
+          <p class="muted">Forage | December 2025</p>
+          <p>
+            Completed tasks involving project setup,
+            Kafka integration, H2 integration, REST API
+            integration, and REST controller development.
+          </p>
+          <a class="certificate-link"
+             href="https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_693db8fe678e25f55c864c5d_1766132246122_completion_certificate.pdf"
+             target="_blank" rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="certification-card">
+        <img
+          src="Images/Hewlett Package.jpeg"
+          alt="HPE Forage completion certificate"
+          class="certificate-image"
+          loading="lazy">
+
+        <div class="certificate-body">
+          <p class="project-type">HEWLETT PACKARD ENTERPRISE</p>
+          <h3>Software Engineering Job Simulation</h3>
+          <p class="muted">Forage | December 2025</p>
+          <p>
+            Completed RESTful web service proposals,
+            basic REST API implementation, data upload
+            functionality, and unit testing.
+          </p>
+          <a class="certificate-link"
+             href="https://www.theforage.com/completion-certificates/fgHAi6dLhpRsGKyyN/da2T3WZCbMAJD7bNB_fgHAi6dLhpRsGKyyN_693db8fe678e25f55c864c5d_1766261555891_completion_certificate.pdf"
+             target="_blank" rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alternate" id="contact">
+  <div class="section-container">
+    <p class="section-label">GET IN TOUCH</p>
+    <div class="contact-layout">
+      <div>
         <h2 class="section-title">
-            Academic foundation and continued software engineering development.
+          Let's build something impactful.
         </h2>
-
-
-        <div class="education-grid">
-
-
-            <!-- MASTER'S -->
-
-            <article class="education-card">
-
-                <div class="education-top">
-
-                    <div>
-
-                        <span class="education-badge">
-                            MASTER'S DEGREE
-                        </span>
-
-                        <h3>
-                            Central Michigan University
-                        </h3>
-
-                    </div>
-
-                    <span class="education-year">
-                        2024 – 2026
-                    </span>
-
-                </div>
-
-                <p class="education-degree">
-                    Master of Science in Information Systems
-                </p>
-
-                <p class="education-location">
-                    Mount Pleasant, Michigan
-                </p>
-
-                <div class="education-info">
-
-                    <span>
-                        GPA
-                        <strong>3.9 / 4.0</strong>
-                    </span>
-
-                    <span>
-                        Graduated
-                        <strong>May 2026</strong>
-                    </span>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- BACHELOR'S -->
-
-            <article class="education-card">
-
-                <div class="education-top">
-
-                    <div>
-
-                        <span class="education-badge">
-                            BACHELOR'S DEGREE
-                        </span>
-
-                        <h3>
-                            Sri Indu College of Engineering & Technology
-                        </h3>
-
-                    </div>
-
-                    <span class="education-year">
-                        2017 – 2021
-                    </span>
-
-                </div>
-
-                <p class="education-degree">
-                    Bachelor of Technology
-                </p>
-
-                <p class="education-location">
-                    Electronics & Communication Engineering
-                </p>
-
-            </article>
-
-
-        </div>
-
-
-
-        <!-- CERTIFICATIONS -->
-
-        <div class="certifications-header">
-
-            <p class="section-label">
-                CERTIFICATIONS
-            </p>
-
-            <h3>
-                Software Engineering Job Simulations
-            </h3>
-
-            <p>
-                Practical job simulations completed through Forage.
-            </p>
-
-        </div>
-
-
-        <div class="certifications-grid">
-
-
-            <!-- JPMORGAN -->
-
-            <article class="certification-card">
-
-                <div class="certification-company">
-                    JPMorgan Chase & Co.
-                </div>
-
-                <h3>
-                    Software Engineering Job Simulation
-                </h3>
-
-                <p class="certification-provider">
-                    Forage • December 2025
-                </p>
-
-                <p class="certification-description">
-                    Completed practical tasks covering project setup, Kafka
-                    integration, H2 integration, REST API integration, and REST
-                    API controller development.
-                </p>
-
-                <div class="certification-tech">
-
-                    <span>Kafka</span>
-                    <span>H2</span>
-                    <span>REST APIs</span>
-                    <span>Backend Development</span>
-
-                </div>
-
-                <a
-                    href="https://www.theforage.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_693db8fe678e25f55c864c5d_1766132246122_completion_certificate.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="certificate-link"
-                >
-                    View Certificate ↗
-                </a>
-
-            </article>
-
-
-
-            <!-- HPE -->
-
-            <article class="certification-card">
-
-                <div class="certification-company">
-                    Hewlett Packard Enterprise
-                </div>
-
-                <h3>
-                    Software Engineering Job Simulation
-                </h3>
-
-                <p class="certification-provider">
-                    Forage • December 2025
-                </p>
-
-                <p class="certification-description">
-                    Completed practical tasks covering RESTful web service
-                    proposals, building a basic RESTful web service, implementing
-                    data upload functionality, and creating unit tests.
-                </p>
-
-                <div class="certification-tech">
-
-                    <span>REST APIs</span>
-                    <span>Web Services</span>
-                    <span>Unit Testing</span>
-                    <span>Backend Development</span>
-
-                </div>
-
-                <a
-                    href="https://www.theforage.com/completion-certificates/fgHAi6dLhpRsGKyyN/da2T3WZCbMAJD7bNB_fgHAi6dLhpRsGKyyN_693db8fe678e25f55c864c5d_1766261555891_completion_certificate.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="certificate-link"
-                >
-                    View Certificate ↗
-                </a>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     CONTACT
-========================================= -->
-
-<section class="section alternate contact-section" id="contact">
-
-    <div class="section-container">
-
-        <p class="section-label">
-            CONTACT
+        <p class="hero-description">
+          Interested in full-stack engineering, Java backend
+          development, distributed systems, and AI-enabled
+          software opportunities.
         </p>
+        <a href="mailto:Karthik.codess@gmail.com"
+           class="btn primary">Let's Connect ↗</a>
+      </div>
 
-        <div class="contact-layout">
-
-            <div>
-
-                <h2 class="section-title">
-                    Let's build reliable backend systems.
-                </h2>
-
-                <p class="contact-description">
-                    I'm currently targeting Java Backend Engineer and Software
-                    Engineer opportunities in the United States.
-                </p>
-
-            </div>
-
-
-            <div class="contact-links">
-
-                <a href="mailto:Karthik.codess@gmail.com">
-                    <span>Email</span>
-                    <strong>
-                        Karthik.codess@gmail.com ↗
-                    </strong>
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/karthik-java-developer/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>LinkedIn</span>
-                    <strong>
-                        linkedin.com/in/karthik-java-developer ↗
-                    </strong>
-                </a>
-
-                <a
-                    href="https://github.com/Karthik0102"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>GitHub</span>
-                    <strong>
-                        github.com/Karthik0102 ↗
-                    </strong>
-                </a>
-
-            </div>
-
-        </div>
-
+      <div class="contact-links">
+        <a href="mailto:Karthik.codess@gmail.com">
+          <span>Email</span>
+          <strong>Karthik.codess@gmail.com ↗</strong>
+        </a>
+        <a href="https://github.com/Karthik0102"
+           target="_blank" rel="noopener noreferrer">
+          <span>GitHub</span>
+          <strong>github.com/Karthik0102 ↗</strong>
+        </a>
+        <a href="https://www.linkedin.com/in/karthik-java-developer/"
+           target="_blank" rel="noopener noreferrer">
+          <span>LinkedIn</span>
+          <strong>View LinkedIn Profile ↗</strong>
+        </a>
+      </div>
     </div>
-
+  </div>
 </section>
-
 
 </main>
 
-
-
-<!-- =========================================
-     FOOTER
-========================================= -->
-
 <footer>
-
-    <div class="footer-container">
-
-        <p>
-            © 2026 Karthik Gadudula
-        </p>
-
-        <p>
-            Java Backend Engineer
-        </p>
-
-    </div>
-
+  <div class="footer-container">
+    <p>© 2026 Karthik Gadudula</p>
+    <p>Full Stack Software Engineer</p>
+  </div>
 </footer>
 
-
 <script src="script.js"></script>
-
 </body>
-
 </html>
